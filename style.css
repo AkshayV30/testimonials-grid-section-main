@@ -80,6 +80,15 @@ body{
     text-align: left;
 }
 
+.testmonial-1 p,
+.testmonial-2 p,
+.testmonial-3 p,
+.testmonial-4 p,
+.testmonial-5 p{
+
+    padding-top: 30px;
+}
+
 
 .testmonial-1 strong,
 .testmonial-2 strong,
@@ -92,6 +101,7 @@ body{
 .testmonial-3 strong,
 .testmonial-5 strong{
     color: var(--Very-dark-blackish-blue);
+ 
 }
 
 
@@ -146,18 +156,31 @@ body{
 .profile{
 
     display: flex;
+    font-size: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px ;
 
 }
+
+#profile-txt{
+    padding-left: 20px;
+}
+.profile h1{
+    font-weight: 600;
+    
+}
+
+.profile h3{
+    font-weight: 500;
+
+}
+
 
 /* ====================================================== imgRound ============================================= */
 #imgRound{
 
     border-radius: 100%;
-
-}
-
-/* ====================================================== verified ============================================= */
-#verified{
 
 }
 
