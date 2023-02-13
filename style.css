@@ -1,0 +1,113 @@
+/* 
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px
+
+### Font
+
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 500, 600
+
+
+*/
+
+:root{
+
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+    
+}
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;;
+}
+/* ----------------------------------------------container-------------------------------- */
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    grid-template-rows: repeat(2, 1fr);
+    column-gap:20px ;
+    row-gap: 20px;
+}
+
+/* -----------------------------------------------testmonal--1----------------------------------- */
+.testmonal-1{
+    grid-column: 1 / 3 ;
+    grid-row: 1 / 2;
+    background-color: var(--Moderate-violet);
+}
+
+/* -----------------------------------------------testmonal--2----------------------------------- */
+.testmonal-2{
+    grid-column: 3 / 4 ;
+    grid-row: 1 / 2;
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+/* -----------------------------------------------testmonal--3----------------------------------- */
+.testmonal-3{
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3;
+    background-color: var(--White);
+}
+
+
+/* -----------------------------------------------testmonal--4----------------------------------- */
+.testmonal-4{
+    grid-column: 2 / 4 ;
+    grid-row: 2 / 3;
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+
+/* -----------------------------------------------testmonal--5----------------------------------- */
+.testmonal-5{
+    grid-column: 4 / 5 ;
+    grid-row: 1 / 3;
+    background-color: var(--white);
+    color:black;
+}
+
+/* --------------------------------------------attribution--------------------------------------------------------- */
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
